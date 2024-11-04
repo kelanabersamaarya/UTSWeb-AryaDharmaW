@@ -1,0 +1,868 @@
+*, html {
+    padding : 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+}
+
+nav {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #414141;
+    font-family: poppins;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid #F8DDA4(0, 0, 0, 0.129);
+}
+
+.Hire {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F8DDA4;
+    border-radius: 10px;
+    font-weight: 600;
+    border : none; 
+    color: #414141;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #F8DDA4;
+    color : #F8DDA4; 
+}
+
+
+.menu-icon {
+    font-size: 24px;
+    display: none;
+}
+
+.menu-button {
+    display: none; /* Sembunyikan tombol di desktop */
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 15;
+    }
+    
+    #menu-list.hidden {
+        display: none;
+    }
+
+    #menu-list.active {
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-icon {
+        align-items: center;
+        display: flex;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+}
+
+/* Hero Section */
+
+.profile {
+    width: 600px;
+    height: 250px;
+    margin: 25px auto;
+    max-width: 600px;
+}
+
+.hero {
+    display: flex;
+    font-family: poppins;
+    gap:5rem; 
+    margin-top: 10px;
+    color: #414141;
+    flex-wrap: wrap;
+}
+
+
+.Touch {
+    background-color: transparent;
+    border : 2px solid #F8DDA4; 
+    border-radius: 10px;
+    padding: 8px;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #414141;
+}
+
+.work {
+    background-color: #F8DDA4;
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    font-weight: 600;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.borderimage {
+    width: 300px;
+    height: 300px; 
+    padding: 8px;
+    border: 5px solid #F8DDA4;
+    border-radius: 10px;
+    height: 250px;
+    margin: 25px auto;
+    max-width: 300px;
+}
+
+.Touch, .work {
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.profesi {
+    margin-top: 15px;
+}
+
+.deskripsisaya {
+    margin-top: 15px;
+}
+
+.btn_hero {
+    margin-bottom: 15px;
+}
+.profileimage {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/myprofile.png');
+    background-size: cover;
+    border-radius: 8px;
+    background-position: -10px 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Expertise */
+
+.experttitle{
+    height: 30px;
+    font-family: poppins;
+    color: #414141;
+    text-align: center;
+    width: 100%;
+    max-width: 770px;
+    margin: 70px auto 20px;
+}
+
+.mobileapp{
+    width: 183px;
+    height: 115px;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+}
+
+.productdesign {
+    width: 183px;
+    height: 115px;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+}
+
+.webdesign {
+    width: 183px;
+    height: 115px;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+}
+
+.expertlist{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #414141;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mobileapp, .productdesign, .webdesign {
+    width: 100%;
+    max-width: 183px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.mobileapp img, .productdesign img, .webdesign img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Quotes */
+
+.quotes {
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+    background-color: #E9E5DD;
+    font-family: poppins;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-weight: 200;
+    gap: 10px;
+    padding: 0px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.quotestext {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin-top: 28px; 
+}
+
+.worktitle {
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #414141;
+    width: 185px;
+    height: 45;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Work Revamp Ipusnas */
+
+.revampipusnas{
+    width:900px ;
+    height: 200px;
+    border: 3px solid #F8DDA4;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.contentpusnas {
+    display: flex;
+    width: 850px;
+    height: 180px;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-top: 15px;
+}
+
+.deskripsipusnas {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.btn_pusnas {
+    background-color: #F8DDA4;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 137px;
+    height:41px ;
+}
+
+.textpusnas {
+    font-weight: 400;
+}
+
+/* Work JKN Mobile */
+
+.jknmobile{
+    width:900px ;
+    height: 200px;
+    border: 3px solid #F8DDA4;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.contentjkn {
+    display: flex;
+    width: 850px;
+    height: 180px;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-top: 15px;
+}
+
+.deskripsijkn {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.btn_jkn {
+    background-color: #F8DDA4;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 137px;
+    height:41px ;
+}
+
+.textjkn {
+    font-weight: 400;
+}
+
+
+/* Work Life well */
+
+.lifewell{
+    width:900px ;
+    height: 200px;
+    border: 3px solid #F8DDA4;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.contentlifewell {
+    display: flex;
+    width: 850px;
+    height: 180px;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-top: 15px;
+}
+
+.deskripsilifewell {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.btn_lifewell {
+    background-color: #F8DDA4;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 137px;
+    height:41px ;
+}
+
+.textlifewell {
+    font-weight: 400;
+}
+
+/* Quotes 2 */
+
+.quotes2 {
+    width: 900px;
+    background-color: #E9E5DD;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-top: 50px auto;
+}
+
+.quotesheading h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quotesdes p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.quotesdes {
+    margin-top: 10px;
+}
+
+.btn_hire2 {
+    background-color: #F8DDA4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 137px;
+    height:41px ;
+    margin-top: 15px;
+}
+
+/* footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F8DDA4;
+    height: auto;
+    padding-top: 40px;
+    width: 100vw;
+    color: #414141;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F8DDA4;
+}
+
+.header-footer {
+    font-size: 2.1 rem;
+    font-weight: 500;
+    line-height: 3rem,;
+    padding-top: 20px;
+}
+
+.deskripsi-footer {
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social-icon {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 3rem 0;
+}
+
+.social-icon li {
+    margin : 0 10px;
+}
+
+.social-icon ul li a  {
+    text-decoration: none;
+    color: #414141;;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+
+}
+
+.footer-menu {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #414141;
+    text-decoration: none;
+    padding: 6px 15px;
+    transition: all;
+    transition-duration: 300ms;
+    padding-bottom: 10px;
+}
+
+.footer-menu ul li a:hover {
+    border-bottom: 1px solid #414141;
+    color : #414141; 
+}
+
+.bottom-footer p {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icon {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icon a:hover {
+    color: #0073b1; /* Ganti warna sesuai platform */
+}
+
+/* footer responsive*/
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: inline;
+    }
+
+    .footer-menu ul li {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile, .borderimage {
+        margin: 0;
+        width: 80%;
+    }
+}
+
+/* Footer Responsive */
+@media (max-width: 500px) {
+
+    .quotes {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer-menu ul {
+        gap: 5px;
+    }
+}
+
+/* my work responsive*/
+
+@media (max-width: 1024px) {
+    .revampipusnas, .jknmobile, .lifewell {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .contentpusnas, .contentjkn, .contentlifewell {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .imagepusnas img, .imagejkn img, .imagelifewell img {
+        width: 80%;
+        height: auto;
+    }
+
+    .btn_pusnas, .btn_jkn, .btn_lifewell {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .revampipusnas, .jknmobile, .lifewell {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .worktitle h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .imagepusnas img, .imagejkn img, .imagelifewell img {
+        width: 100%;
+        height: auto;
+    }
+
+    .deskripsipusnas, .deskripsijkn, .deskripsilifewell {
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn_pusnas, .btn_jkn, .btn_lifewell {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentpusnas, .contentjkn, .contentlifewell {
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .revampipusnas, .jknmobile, .lifewell {
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .worktitle h2 {
+        font-size: 20px;
+    }
+
+    .btn_pusnas, .btn_jkn, .btn_lifewell {
+        width: 100%;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .textpusnas, .textjkn, .textlifewell {
+        font-size: 14px;
+    }
+}
+
+/* style button */
+.btn_pusnas, .btn_jkn, .btn_lifewell {
+    background-color: #F8DDA4;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px; 
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect untuk button */
+.btn_pusnas:hover, .btn_jkn:hover, .btn_lifewell:hover {
+    background-color: #ECC17A;
+}
+
+/* Responsive button */
+@media (max-width: 1024px) {
+    .btn_pusnas, .btn_jkn, .btn_lifewell {
+        width: auto;
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .btn_pusnas, .btn_jkn, .btn_lifewell {
+        width: 100%;
+        padding: 10px; 
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn_pusnas, .btn_jkn, .btn_lifewell {
+        width: 100%;
+        padding: 8px; 
+        font-size: 12px;
+    }
+}
+
+/* Responsive Quotes 2 */
+@media (max-width: 1024px) {
+    .quotes2 {
+        width: 80%;
+        padding: 25px 15px;
+    }
+
+    .quotesheading h3 {
+        font-size: 22px;
+    }
+
+    .quotesdes p {
+        font-size: 15px;
+    }
+
+    .btn_hire2 {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quotes2 {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .quotesheading h3 {
+        font-size: 20px;
+    }
+
+    .quotesdes p {
+        font-size: 14px;
+    }
+
+    .btn_hire2 {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quotes2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .quotesheading h3 {
+        font-size: 18px;
+    }
+
+    .quotesdes p {
+        font-size: 13px;
+    }
+
+    .btn_hire2 {
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+/* expetlist responsiev */
+@media (max-width: 1024px) {
+    .experttitle {
+        width: 90%;
+        font-size: 1.8em;
+    }
+
+    .expertlist {
+        gap: 15px;
+    }
+
+    .mobileapp, .productdesign, .webdesign {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .experttitle {
+        font-size: 1.6em;
+    }
+
+    .expertlist {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .mobileapp, .productdesign, .webdesign {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experttitle {
+        font-size: 1.4em;
+        margin-top: 50px;
+    }
+
+    .mobileapp, .productdesign, .webdesign {
+        width: 100%;
+        max-width: 120px;
+        padding: 10px;
+    }
+
+    .mobileapp h4, .productdesign h4, .webdesign h4 {
+        font-size: 0.9em;
+    }
+
+    .mobileapp img, .productdesign img, .webdesign img {
+        width: 60px;
+        height: 60px;
+    }
+}
